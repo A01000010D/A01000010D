@@ -1,86 +1,89 @@
-.<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
   <title>MY WEBSITE</title>
   <style>
     body {
-      background-color: #000000; /* Light grey background */
+      background-color: #f0f0f0; /* Light grey background */
       color: #333; /* Dark grey text */
       font-family: 'Arial', sans-serif;
       margin: 0;
-      padding: 20px;
+      padding: 40px; /* More padding around the card */
       display: flex;
       justify-content: center;
       align-items: center;
       min-height: 100vh; /* Ensure full viewport height */
+      background-image: linear-gradient(to bottom right, #ddd, #eee); /* Subtle gradient */
     }
 
     .business-card {
-      background-color: #000000;
-      border-radius: 10px;
-      padding: 40px; /* Increased padding for better spacing */
-      width: 300px; /* More reasonable width for a business card */
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      background-color: #fff; /* Clean white card */
+      border-radius: 12px; /* Slightly more rounded corners */
+      padding: 60px; /* Even more padding inside */
+      width: 400px; /* Increased width */
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Slightly stronger shadow */
       position: relative; /* For absolute positioning of the logo */
       text-align: center; /* Center the initial content */
     }
 
     .name {
-      font-size: 2.2em;
+      font-size: 2.8em; /* Bigger name */
       font-weight: bold;
-      margin-bottom: 5px;
+      margin-bottom: 8px;
       color: #2c3e50; /* Darker, professional color */
     }
 
     .title {
-      font-size: 1.3em;
+      font-size: 1.6em; /* Slightly bigger title */
       color: #777;
-      margin-bottom: 25px;
+      margin-bottom: 35px; /* More space after title */
     }
 
     .contact-info {
-      margin-top: 30px;
+      margin-top: 40px; /* More space before contact info */
       text-align: left; /* Align contact info to the left */
     }
 
     .contact-info p {
       display: flex;
       align-items: center;
-      margin-bottom: 15px;
+      margin-bottom: 18px; /* More space between contact lines */
+      font-size: 1.1em; /* Slightly larger contact text */
     }
 
     .contact-info img {
-      width: 20px; /* Slightly smaller icons */
-      height: 20px;
-      margin-right: 10px;
+      width: 24px; /* Slightly larger icons */
+      height: 24px;
+      margin-right: 12px;
       vertical-align: middle;
       opacity: 0.7;
     }
 
     .logo-container {
         position: absolute;
-        top: 20px;
-        right: 20px;
+        top: 25px;
+        right: 25px;
         text-align: right;
     }
 
     .logo {
-        width: 60px; /* Adjusted logo size */
+        width: 70px; /* Adjusted logo size */
         height: auto;
-        opacity: 0.8;
-        border-radius: 5px; /* Optional: slightly rounded logo */
+        opacity: 0.85; /* Slightly more visible logo */
+        border-radius: 7px; /* Optional: slightly rounded logo */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08); /* Subtle shadow for logo */
     }
 
     .logo-text {
-        font-size: 0.8em;
+        font-size: 0.9em;
         color: #555;
-        margin-top: 5px;
+        margin-top: 7px;
     }
 
     .slogan {
         font-style: italic;
         color: #999;
-        font-size: 0.8em;
+        font-size: 0.9em;
     }
   </style>
 </head>
