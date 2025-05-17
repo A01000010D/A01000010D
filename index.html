@@ -1,107 +1,111 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>MY WEBSITE</title>
-  <style>
-    body {
-      background-color: #f0f0f0; /* Light grey background */
-      color: #333; /* Dark grey text */
-      font-family: 'Arial', sans-serif;
-      margin: 0;
-      padding: 40px; /* More padding around the card */
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh; /* Ensure full viewport height */
-      background-image: linear-gradient(to bottom right, #ddd, #eee); /* Subtle gradient */
-    }
+ <!DOCTYPE html>
+ <html>
+ <head>
+   <title>MY WEBSITE</title>
+   <style>
+     body {
+       background-color: #000; /* Black background */
+       color: #333; /* Dark grey text */
+       font-family: 'Arial', sans-serif;
+       margin: 0;
+       padding: 40px; /* More padding around the card */
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       min-height: 100vh; /* Ensure full viewport height */
+       background-image: radial-gradient(#222 20%, transparent 20%), radial-gradient(#222 20%, transparent 20%); /* Black background with dots */
+       background-size: 30px 30px; /* Adjust dot size and spacing */
+       background-position: 0 0, 15px 15px;
+     }
 
-    .business-card {
-      background-color: #fff; /* Clean white card */
-      border-radius: 12px; /* Slightly more rounded corners */
-      padding: 60px; /* Even more padding inside */
-      width: 400px; /* Increased width */
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Slightly stronger shadow */
-      position: relative; /* For absolute positioning of the logo */
-      text-align: center; /* Center the initial content */
-    }
+     .business-card {
+       background-color: #222; /* Darker card background */
+       border-radius: 12px; /* Slightly more rounded corners */
+       padding: 60px; /* Even more padding inside */
+       width: 400px; /* Increased width */
+       box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Slightly stronger shadow */
+       position: relative; /* For absolute positioning of the logo */
+       text-align: center; /* Center the initial content */
+       color: #eee; /* Light text color for darker background */
+     }
 
-    .name {
-      font-size: 2.8em; /* Bigger name */
-      font-weight: bold;
-      margin-bottom: 8px;
-      color: #2c3e50; /* Darker, professional color */
-    }
+     .name {
+       font-size: 2.8em; /* Bigger name */
+       font-weight: bold;
+       margin-bottom: 8px;
+       color: #fff; /* White name */
+     }
 
-    .title {
-      font-size: 1.6em; /* Slightly bigger title */
-      color: #777;
-      margin-bottom: 35px; /* More space after title */
-    }
+     .title {
+       font-size: 1.6em; /* Slightly bigger title */
+       color: #ccc;
+       margin-bottom: 35px; /* More space after title */
+     }
 
-    .contact-info {
-      margin-top: 40px; /* More space before contact info */
-      text-align: left; /* Align contact info to the left */
-    }
+     .contact-info {
+       margin-top: 40px; /* More space before contact info */
+       text-align: left; /* Align contact info to the left */
+     }
 
-    .contact-info p {
-      display: flex;
-      align-items: center;
-      margin-bottom: 18px; /* More space between contact lines */
-      font-size: 1.1em; /* Slightly larger contact text */
-    }
+     .contact-info p {
+       display: flex;
+       align-items: center;
+       margin-bottom: 18px; /* More space between contact lines */
+       font-size: 1.1em; /* Slightly larger contact text */
+       color: #ddd; /* Lighter contact text */
+     }
 
-    .contact-info img {
-      width: 24px; /* Slightly larger icons */
-      height: 24px;
-      margin-right: 12px;
-      vertical-align: middle;
-      opacity: 0.7;
-    }
+     .contact-info img {
+       width: 24px; /* Slightly larger icons */
+       height: 24px;
+       margin-right: 12px;
+       vertical-align: middle;
+       opacity: 0.7;
+     }
 
-    .logo-container {
-        position: absolute;
-        top: 25px;
-        right: 25px;
-        text-align: right;
-    }
+     .logo-container {
+         position: absolute;
+         top: 25px;
+         right: 25px;
+         text-align: right;
+     }
 
-    .logo {
-        width: 70px; /* Adjusted logo size */
-        height: auto;
-        opacity: 0.85; /* Slightly more visible logo */
-        border-radius: 7px; /* Optional: slightly rounded logo */
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08); /* Subtle shadow for logo */
-    }
+     .logo {
+         width: 70px; /* Adjusted logo size */
+         height: auto;
+         opacity: 0.85; /* Slightly more visible logo */
+         border-radius: 7px; /* Optional: slightly rounded logo */
+         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08); /* Subtle shadow for logo */
+     }
 
-    .logo-text {
-        font-size: 0.9em;
-        color: #555;
-        margin-top: 7px;
-    }
+     .logo-text {
+         font-size: 0.9em;
+         color: #aaa;
+         margin-top: 7px;
+     }
 
-    .slogan {
-        font-style: italic;
-        color: #999;
-        font-size: 0.9em;
-    }
-  </style>
-</head>
-<body>
+     .slogan {
+         font-style: italic;
+         color: #bbb;
+         font-size: 0.9em;
+     }
+   </style>
+ </head>
+ <body>
 
-  <div class="business-card">
-    <div class="logo-container">
-      <img src="https://avatars.githubusercontent.com/u/207436166?v=4" alt="Logo" class="logo">
-      <div class="logo-text"> always all ways <br><span class="slogan"></span></div>
-    </div>
-    <div class="name">ABD</div>
-    <div class="title">CS & MATH</div>
-    <div class="contact-info">
-      <p><img src="https://cdn-icons-png.flaticon.com/32/561/561127.png" alt="Phone"> TG : A01000010 </p>
-      <p><img src="https://cdn-icons-png.flaticon.com/32/561/561127.png" alt="Email"> a01000010d@gemail.com </p>
-      <p><img src="https://cdn-icons-png.flaticon.com/32/561/561127.png" alt="Website"> www.github.com/A01000010D </p>
-    </div>
-  </div>
+   <div class="business-card">
+     <div class="logo-container">
+       <img src="https://avatars.githubusercontent.com/u/207436166?v=4" alt="Logo" class="logo">
+       <div class="logo-text"> always all ways <br><span class="slogan"></span></div>
+     </div>
+     <div class="name">ABD</div>
+     <div class="title">CS & MATH</div>
+     <div class="contact-info">
+       <p><img src="https://cdn-icons-png.flaticon.com/32/561/561127.png" alt="Phone"> TG : A01000010 </p>
+       <p><img src="https://cdn-icons-png.flaticon.com/32/561/561127.png" alt="Email"> a01000010d@gemail.com </p>
+       <p><img src="https://cdn-icons-png.flaticon.com/32/561/561127.png" alt="Website"> www.github.com/A01000010D </p>
+     </div>
+   </div>
 
-</body>
-</html>
+ </body>
+ </html>
