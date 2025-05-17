@@ -4,90 +4,92 @@
    <title>MY WEBSITE</title>
    <style>
      body {
-       background-color: #000; /* Black background */
-       color: #fff; /* Dark grey text */
-       font-family: 'Arial', sans-serif;
+       background-color: #000;
+       color: #fff;
+       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
        margin: 0;
-       padding: 40px; /* More padding around the card */
+       padding: 40px;
        display: flex;
        justify-content: center;
        align-items: center;
-       min-height: 100vh; /* Ensure full viewport height */
-       background-image: radial-gradient(#fff 20%, transparent 20%), radial-gradient(#222 20%, transparent 20%); /* Black background with dots */
-       background-size: 120px 120px; /* Adjust dot size and spacing */
+       min-height: 100vh;
+       background-image: radial-gradient(#fff 20%, transparent 20%), radial-gradient(#222 20%, transparent 20%);
+       background-size: 120px 120px;
        background-position: 0 0, 15px 15px;
      }
 
      .business-card {
-       background-color: #000; /* Darker card background */
-       border-radius: 12px; /* Slightly more rounded corners */
-       padding: 60px; /* Even more padding inside */
-       width: 400px; /* Increased width */
-       box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Slightly stronger shadow */
-       position: relative; /* For absolute positioning of the logo */
-       text-align: center; /* Center the initial content */
-       color: #fff; /* Light text color for darker background */
+       background-color: #000;
+       border-radius: 12px;
+       padding: 60px;
+       width: 450px; /* Slightly increased width */
+       box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+       position: relative;
+       text-align: center;
+       color: #fff;
+     }
+
+     .logo-container {
+       position: absolute;
+       top: 25px;
+       right: 25px;
+       text-align: right;
+     }
+
+     .logo {
+       width: 70px;
+       height: auto;
+       opacity: 0.85;
+       border-radius: 7px;
+       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+     }
+
+     .logo-text {
+       font-size: 0.9em;
+       color: #aaa;
+       margin-top: 7px;
      }
 
      .name {
-       font-size: 2.8em; /* Bigger name */
+       font-size: 2.8em;
        font-weight: bold;
-       margin-bottom: 8px;
-       color: #fff; /* White name */
+       margin-bottom: 12px; /* Adjusted spacing */
+       color: #fff;
+       letter-spacing: 0.5px; /* Added letter spacing */
      }
 
      .title {
-       font-size: 1.6em; /* Slightly bigger title */
+       font-size: 1.6em;
        color: #ccc;
-       margin-bottom: 35px; /* More space after title */
+       margin-bottom: 40px; /* Adjusted spacing */
+       font-style: italic; /* Added italic style */
      }
 
      .contact-info {
-       margin-top: 40px; /* More space before contact info */
-       text-align: left; /* Align contact info to the left */
+       margin-top: 40px;
+       text-align: left;
      }
 
      .contact-info p {
        display: flex;
        align-items: center;
-       margin-bottom: 18px; /* More space between contact lines */
-       font-size: 1.1em; /* Slightly larger contact text */
-       color: #ddd; /* Lighter contact text */
+       margin-bottom: 20px; /* Adjusted spacing */
+       font-size: 1.1em;
+       color: #ddd;
      }
 
      .contact-info img {
-       width: 24px; /* Slightly larger icons */
+       width: 24px;
        height: 24px;
        margin-right: 12px;
        vertical-align: middle;
        opacity: 0.7;
      }
 
-     .logo-container {
-         position: absolute;
-         top: 25px;
-         right: 25px;
-         text-align: right;
-     }
-
-     .logo {
-         width: 70px; /* Adjusted logo size */
-         height: auto;
-         opacity: 0.85; /* Slightly more visible logo */
-         border-radius: 7px; /* Optional: slightly rounded logo */
-         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08); /* Subtle shadow for logo */
-     }
-
-     .logo-text {
-         font-size: 0.9em;
-         color: #aaa;
-         margin-top: 7px;
-     }
-
      .slogan {
-         font-style: italic;
-         color: #bbb;
-         font-size: 0.9em;
+       font-style: italic;
+       color: #bbb;
+       font-size: 0.9em;
      }
    </style>
  </head>
