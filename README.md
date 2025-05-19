@@ -30,13 +30,4 @@
   <li>🤝 Love collaborating on open-source projects and sharing knowledge.</li>
 </ul>
 
----
 
-<h3 align="left">🌍 Perspective</h3>
-<p align="left"><b>Pale Blue Dot</b></p>
-<p align="center">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/7/73/Pale_Blue_Dot.png" alt="Pale Blue Dot" width="250" style="transform: scaleX(-1); border-radius: 12px; background: #f5f5dc; padding: 8px;"/>
-</p>
-<p align="center">
-  <i><small>"That's here. That's home. That's us."</small></i>
-</p>
