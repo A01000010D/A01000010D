@@ -1,3 +1,5 @@
+![Dark Mode](https://github.blog/wp-content/uploads/2024/01/Productivity-DarkMode-3.png?resize=1200%2C630)
+
 <h1 align="center">Hi, I'm ABD</h1>
 <p align="center"><strong>Backend Developer | Problem Solver | Open Source Enthusiast</strong></p>
 
