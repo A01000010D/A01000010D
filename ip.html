@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>IP Info</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link href="https://fonts.cdnfonts.com/css/thegoodmonolith" rel="stylesheet">
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    background: #000;
+    color: #fff;
+    font-family: 'TheGoodMonolith', monospace, monospace;
+}
+.main-container {
+    max-width: 600px;
+    margin: 5vh auto 3vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+.section-box {
+    box-sizing: border-box;
+    padding: 1.5rem 1.2rem;
+    background: rgba(0,0,0,0.55);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 12px;
+}
+.section-title {
+    margin: 0 0 0.7rem 0;
+    text-align: left;
+    font-size: 1.25em;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    color: #fff;
+}
+.info-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1em;
+    table-layout: fixed;
+}
+.info-table td {
+    padding: 0.18em 0.5em 0.18em 0;
+    vertical-align: top;
+}
+.info-table .label {
+    color: #aaa;
+    width: 180px;
+    min-width: 180px;
+    max-width: 180px;
+    padding-right: 10px;
+    font-weight: 600;
+    text-align: left;
+    word-break: break-word;
+}
+.info-table .value {
+    color: #fff;
+    word-break: break-word;
+    text-align: left;
+}
+@media screen and (min-width: 768px) {
+    .main-container { max-width: 800px; }
+    .section-box { padding: 2.4rem; }
+    .section-title { font-size: 1.3em; }
+    .info-table { font-size: 1.14em; }
+    .info-table .label {
+        width: 220px;
+        min-width: 220px;
+        max-width: 220px;
+    }
+}
+</style>
+</head>
+<body>
+<div class="main-container">
+    <div class="section-box" id="section-ip">
+        <div class="section-title">IP & Location</div>
+        <table class="info-table" id="ipLocationTable">
+            <tr><td class="label">IP Address</td><td class="value">Loading...</td></tr>
+            <tr><td class="label">Reverse DNS</td><td class="value">Loading...</td></tr>
+            <tr><td class="label">Country</td><td class="value">Loading...</td></tr>
+            <tr><td class="label">Country Code</td><td class="value">Loading...</td></tr>
+            <tr><td class="label">Region</td><td class="value">Loading...</td></tr>
+            <tr><td class="label">Region Code</td><td class="value">Loading...</td></tr>
+            <tr><td class="label">City</td><td class="value">Loading...</td></tr>
+            <tr><td class="label">Continent</td><td class="value">Loading...</td></tr>
+            <tr><td class="label">Latitude</td><td class="value">Loading...</td></tr>
+            <tr><td class="label">Longitude</td><td class="value">Loading...</td></tr>
+            <tr><td class="label">Postal Code</td><td class="value">Loading...</td></tr>
+            <tr><td class="label">Timezone</td><td class="value">Loading...</td></tr>
+            <tr><td class="label">UTC Offset</td><td class="value">Loading...</td></tr>
+            <tr><td class="label">Daylight Saving</td><td class="value">Loading...</td></tr>
+            <tr><td class="label">Local Time</td><td class="value">Loading...</td></tr>
+            <tr><td class="label">Calling Code</td><td class="value">Loading...</td></tr>
+            <tr><td class="label">Currency</td><td class="value">Loading...</td></tr>
+        </table>
+    </div>
+    <div class="section-box" id="section-network">
+        <div class="section-title">Network & Connection</div>
+        <table class="info-table" id="networkTable">
+            <tr><td class="label">ISP</td><td class="value">Loading...</td></tr>
+            <tr><td class="label">Organization</td><td class="value">Loading...</td></tr>
+            <tr><td class="label">ASN</td><td class="value">Loading...</td></tr>
+            <tr><td class="label">Connection Type</td><td class="value">Loading...</td></tr>
+            <tr><td class="label">Anycast</td><td class="value">Loading...</td></tr>
+            <tr><td class="label">Mobile Connection</td><td class="value">Loading...</td></tr>
+        </table>
+    </div>
+    <div class="section-box" id="section-security">
+        <div class="section-title">Security & Routing</div>
+        <table class="info-table" id="securityTable">
+            <tr><td class="label">Proxy/VPN</td><td class="value">Loading...</td></tr>
+            <tr><td class="label">Hosting/Datacenter</td><td class="value">Loading...</td></tr>
+            <tr><td class="label">Tor Exit Node</td><td class="value">Loading...</td></tr>
+            <tr><td class="label">Threat Status</td><td class="value">Loading...</td></tr>
+        </table>
+    </div>
+    <div class="section-box" id="section-device">
+        <div class="section-title">Device Info</div>
+        <table class="info-table" id="deviceTable">
+            <tr><td class="label">Device Type</td><td class="value">Loading...</td></tr>
+            <tr><td class="label">Operating System</td><td class="value">Loading...</td></tr>
+            <tr><td class="label">CPU Cores</td><td class="value">Loading...</td></tr>
+            <tr><td class="label">Device Memory</td><td class="value">Loading...</td></tr>
+            <tr><td class="label">Touch Support</td><td class="value">Loading...</td></tr>
+            <tr><td class="label">Screen Resolution</td><td class="value">Loading...</td></tr>
+            <tr><td class="label">Color Depth</td><td class="value">Loading...</td></tr>
+            <tr><td class="label">Pixel Ratio</td><td class="value">Loading...</td></tr>
+        </table>
+    </div>
+    <div class="section-box" id="section-browser">
+        <div class="section-title">Browser Info</div>
+        <table class="info-table" id="browserTable">
+            <tr><td class="label">Browser</td><td class="value">Loading...</td></tr>
+            <tr><td class="label">Browser Vendor</td><td class="value">Loading...</td></tr>
+            <tr><td class="label">Browser Platform</td><td class="value">Loading...</td></tr>
+            <tr><td class="label">User Agent</td><td class="value">Loading...</td></tr>
+            <tr><td class="label">Do Not Track</td><td class="value">Loading...</td></tr>
+            <tr><td class="label">Pointer Type</td><td class="value">Loading...</td></tr>
+            <tr><td class="label">Cookies Enabled</td><td class="value">Loading...</td></tr>
+            <tr><td class="label">Online</td><td class="value">Loading...</td></tr>
+        </table>
+    </div>
+    <div class="section-box" id="section-languages">
+        <div class="section-title">Languages & Misc</div>
+        <table class="info-table" id="languagesTable">
+            <tr><td class="label">Language</td><td class="value">Loading...</td></tr>
+            <tr><td class="label">Languages</td><td class="value">Loading...</td></tr>
+            <tr><td class="label">Referrer</td><td class="value">Loading...</td></tr>
+        </table>
+    </div>
+</div>
+<script>
+function getDeviceInfo() {
+    const ua = navigator.userAgent;
+    let os = "Unknown";
+    if (/windows/i.test(ua)) os = "Windows";
+    else if (/android/i.test(ua)) os = "Android";
+    else if (/mac/i.test(ua)) os = "MacOS";
+    else if (/linux/i.test(ua)) os = "Linux";
+    else if (/iphone|ipad|ipod/i.test(ua)) os = "iOS";
+
+    let browser = "Unknown";
+    if (/chrome|crios/i.test(ua)) browser = "Chrome";
+    else if (/firefox|fxios/i.test(ua)) browser = "Firefox";
+    else if (/safari/i.test(ua) && !/chrome|crios/i.test(ua)) browser = "Safari";
+    else if (/edg/i.test(ua)) browser = "Edge";
+    else if (/opera|opr/i.test(ua)) browser = "Opera";
+
+    let cpuCores = navigator.hardwareConcurrency || "N/A";
+    let deviceMemory = navigator.deviceMemory ? navigator.deviceMemory + " GB" : "N/A";
+    let touchSupport = navigator.maxTouchPoints !== undefined ? (navigator.maxTouchPoints > 0 ? "Yes" : "No") : "N/A";
+    let colorDepth = window.screen.colorDepth ? window.screen.colorDepth + "-bit" : "N/A";
+    let pixelRatio = window.devicePixelRatio ? window.devicePixelRatio : "N/A";
+    let platform = navigator.platform || "N/A";
+    let vendor = navigator.vendor || "N/A";
+    let doNotTrack = navigator.doNotTrack == "1" ? "Yes" : "No";
+    let pointer =
+        (window.matchMedia && window.matchMedia("(pointer: coarse)").matches) ? "Coarse" :
+        (window.matchMedia && window.matchMedia("(pointer: fine)").matches) ? "Fine" : "N/A";
+    let cookieEnabled = navigator.cookieEnabled ? "Yes" : "No";
+    let online = navigator.onLine ? "Yes" : "No";
+    let languages = Array.isArray(navigator.languages) ? navigator.languages.join(", ") : navigator.language || "N/A";
+    let referrer = document.referrer || "N/A";
+
+    return {
+        os,
+        browser,
+        language: navigator.language,
+        languages,
+        screen: `${window.screen.width} x ${window.screen.height}`,
+        userAgent: ua,
+        localTime: new Date().toLocaleString(),
+        platform,
+        cpuCores,
+        deviceMemory,
+        touchSupport,
+        colorDepth,
+        pixelRatio,
+        vendor,
+        doNotTrack,
+        pointer,
+        cookieEnabled,
+        online,
+        referrer
+    };
+}
+
+async function getIPInfo() {
+    try {
+        const response = await fetch('https://ipwho.is/');
+        if (!response.ok) throw new Error();
+        return await response.json();
+    } catch {
+        try {
+            const response = await fetch('https://ipapi.co/json/');
+            if (!response.ok) throw new Error();
+            return await response.json();
+        } catch {
+            return {};
+        }
+    }
+}
+
+// Each section's field list in the same order as the table rows and IDs in HTML
+function renderNetworkInfo(ipData) {
+    const dev = getDeviceInfo();
+
+    // 1. IP & Location
+    const ipLoc = [
+        ipData.ip || ipData.query || 'N/A',
+        ipData.reverse || ipData.hostname || 'N/A',
+        (ipData.country_flag_emoji ? ipData.country_flag_emoji + ' ' : '') + (ipData.country || ipData.country_name || 'N/A'),
+        ipData.country_code || 'N/A',
+        ipData.region || ipData.region_name || 'N/A',
+        ipData.region_code || 'N/A',
+        ipData.city || 'N/A',
+        ipData.continent || ipData.continent_code || 'N/A',
+        ipData.latitude || ipData.lat || 'N/A',
+        ipData.longitude || ipData.lon || 'N/A',
+        ipData.postal || ipData.zip || 'N/A',
+        ipData.timezone || ipData.time_zone || 'N/A',
+        ipData.utc_offset || (ipData.timezone && ipData.timezone.utc) || 'N/A',
+        ipData.is_dst !== undefined ? (ipData.is_dst ? "Yes" : "No") : (ipData.timezone && ipData.timezone.is_dst !== undefined ? (ipData.timezone.is_dst ? "Yes" : "No") : 'N/A'),
+        dev.localTime,
+        ipData.calling_code ? '+' + ipData.calling_code : 'N/A',
+        ipData.currency ? `${ipData.currency} (${ipData.currency_name || ''}${ipData.currency_symbol ? ', ' + ipData.currency_symbol : ''})` : 'N/A'
+    ];
+    // 2. Network/Connection
+    const net = [
+        ipData.isp || ipData.org || 'N/A',
+        ipData.organization || ipData.org || 'N/A',
+        ipData.asn || ipData.as || 'N/A',
+        ipData.connection_type || 'N/A',
+        ipData.anycast !== undefined ? (ipData.anycast ? "Yes" : "No") : "N/A",
+        ipData.mobile !== undefined ? (ipData.mobile ? 'Yes' : 'No') : 'N/A'
+    ];
+    // 3. Security & Routing
+    const sec = [
+        ipData.proxy !== undefined ? (ipData.proxy ? 'Yes' : 'No') : 'N/A',
+        ipData.hosting !== undefined ? (ipData.hosting ? 'Yes' : 'No') : 'N/A',
+        ipData.tor !== undefined ? (ipData.tor ? 'Yes' : 'No') : 'N/A',
+        ipData.threat || 'N/A'
+    ];
+    // 4. Device Info
+    const devinfo = [
+        /mobile|android|iphone|ipad|ipod/i.test(dev.userAgent) ? "Mobile" : /tablet/i.test(dev.userAgent) ? "Tablet" : "Desktop",
+        dev.os,
+        dev.cpuCores,
+        dev.deviceMemory,
+        dev.touchSupport,
+        dev.screen,
+        dev.colorDepth,
+        dev.pixelRatio
+    ];
+    // 5. Browser Info
+    const browinfo = [
+        dev.browser,
+        dev.vendor,
+        dev.platform,
+        dev.userAgent,
+        dev.doNotTrack,
+        dev.pointer,
+        dev.cookieEnabled,
+        dev.online
+    ];
+    // 6. Languages & Misc
+    const langinfo = [
+        dev.language,
+        dev.languages,
+        dev.referrer
+    ];
+
+    // Fill table in the same row order
+    const fill = (id, arr) => {
+        const table = document.getElementById(id);
+        for (let i = 0; i < table.rows.length; ++i) {
+            table.rows[i].cells[1].textContent = arr[i];
+        }
+    };
+    fill('ipLocationTable', ipLoc);
+    fill('networkTable', net);
+    fill('securityTable', sec);
+    fill('deviceTable', devinfo);
+    fill('browserTable', browinfo);
+    fill('languagesTable', langinfo);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    getIPInfo().then(renderNetworkInfo);
+});
+</script>
+</body>
+</html>

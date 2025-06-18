@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>ABD</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link href="https://fonts.cdnfonts.com/css/thegoodmonolith" rel="stylesheet">
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    background: #000;
+    color: #fff;
+    font-family: 'TheGoodMonolith', sans-serif;
+}
+.main-container {
+    max-width: 450px;
+    margin: 3vh auto 1.5vh;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+.section-box {
+    box-sizing: border-box;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.55);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+}
+.header-flex {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+.logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+.header-flex h1 {
+    margin: 0 0 0.2em 0;
+    font-size: 1.5em;
+}
+.header-flex div:last-child {
+    font-size: 0.8em;
+}
+.main-heading {
+    margin: 0;
+    text-align: left;
+    font-size: 1.8em;
+    line-height: 1.2;
+    word-spacing: -2px;
+}
+.section-title {
+    margin: 0 0 0.5rem 0;
+    text-align: left;
+    font-size: 1.4em;
+}
+.introduction-text, .contact-info {
+    margin: 0;
+    font-size: 0.85em;
+    line-height: 1.4;
+}
+.contact-info a {
+    color: #fff;
+    text-decoration: none;
+}
+.contact-info a:hover {
+    text-decoration: underline;
+}
+.about-me-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.3rem;
+}
+.about-me-columns ul {
+    flex: 1;
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+.about-me-columns li {
+    margin-bottom: 0.4rem;
+    font-size: 0.8em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.about-me-columns ul li:last-child {
+    margin-bottom: 0;
+}
+.about-me-columns ul:first-child li:nth-child(1)::before { content: "1 "; }
+.about-me-columns ul:first-child li:nth-child(2)::before { content: "2 "; }
+.about-me-columns ul:first-child li:nth-child(3)::before { content: "3 "; }
+.about-me-columns ul:first-child li:nth-child(4)::before { content: "4 "; }
+.about-me-columns ul:first-child li:nth-child(5)::before { content: "5 "; }
+.about-me-columns ul:last-child li:nth-child(1)::before { content: "6 "; }
+.about-me-columns ul:last-child li:nth-child(2)::before { content: "7 "; }
+.about-me-columns ul:last-child li:nth-child(3)::before { content: "8 "; }
+.about-me-columns ul:last-child li:nth-child(4)::before { content: "9 "; }
+.about-me-columns ul:last-child li:nth-child(5)::before { content: "10 "; }
+@media screen and (min-width: 768px) {
+    .main-container {
+        max-width: 680px;
+        margin: 5vh auto 3vh;
+        gap: 1.2rem;
+    }
+    .section-box {
+        padding: 1.5rem;
+    }
+    .header-flex {
+        gap: 1.2rem;
+    }
+    .logo {
+        width: 70px;
+        height: 70px;
+    }
+    .header-flex h1 {
+        font-size: 1.8em;
+    }
+    .header-flex div:last-child {
+        font-size: 0.9em;
+    }
+    .main-heading {
+        font-size: 2.2em;
+    }
+    .section-title {
+        font-size: 1.7em;
+        margin-bottom: 0.6rem;
+    }
+    .about-me-columns {
+        gap: 0.6rem;
+    }
+    .about-me-columns li {
+        margin-bottom: 0.6rem;
+        font-size: 0.9em;
+    }
+    .introduction-text, .contact-info {
+        font-size: 0.9em;
+    }
+}
+</style>
+</head>
+<body>
+<div class="main-container">
+    <div class="section-box">
+        <div class="header-flex">
+            <img src="https://avatars.githubusercontent.com/u/207436166?v=4" class="logo" alt="Profile picture of ABD">
+            <div>
+                <h1>ABD</h1>
+                <div>A01000010D</div>
+            </div>
+        </div>
+    </div>
+    <div class="section-box">
+        <div class="main-heading">
+            THE EDGE OF<br>UNDERSTANDING<br>IS WHERE TRUE<br>KNOWLEDGE BEGINS
+        </div>
+    </div>
+    <div class="section-box">
+        <h2 class="section-title">ABOUT ME</h2>
+        <div class="about-me-columns">
+            <ul>
+                <li>Backend Developer</li>
+                <li>Passionate</li>
+                <li>Persistent</li>
+                <li>Always learning</li>
+                <li>Always building</li>
+            </ul>
+            <ul>
+                <li>Love collaboration</li>
+                <li>Open Source Enthusiast</li>
+                <li>Exploring development paths</li>
+                <li>Always looking for challenges</li>
+                <li>Love experimenting new things</li>
+            </ul>
+        </div>
+    </div>
+    <div class="section-box">
+        <h2 class="section-title">INTRODUCTION</h2>
+        <p class="introduction-text">
+            I'm a backend developer passionate about coding. I thrive on combining logic and creativity to build innovative solutions and engaging experiences. My enthusiasm for development drives me to continuously improve my skills, learn new technologies, and contribute to meaningful projects. I enjoy collaborating with others and believe that the best results come from a blend of dedication, curiosity, and teamwork.
+        </p>
+    </div>
+    <div class="section-box">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="contact-info">
+            Email: <a href="mailto:a01000010d@gmail.com">a01000010d@gmail.com</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
